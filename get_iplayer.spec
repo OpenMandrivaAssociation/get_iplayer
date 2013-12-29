@@ -1,6 +1,6 @@
 %define name 	get_iplayer
 %define version 2.80
-%define release 2
+%define release 3
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		%{name}
