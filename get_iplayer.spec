@@ -1,11 +1,9 @@
-%define name 	get_iplayer
-%define version 2.80
-%define release 2
+%define debug_package %{nil}
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		get_iplayer
+Version:	2.90
+Release:	1
 License:	GPL
 Group:		Networking/File transfer
 Url:		http://www.infradead.org/get_iplayer/html/get_iplayer.html
@@ -14,14 +12,16 @@ BuildRoot:	%{_tmppath}/%{name}-root
 Suggests:	flvstreamer
 
 %description
-Lists, searches and records BBC iPlayer TV/Radio, BBC Podcast and ITVplayer TV programmes
+Lists, searches and records BBC iPlayer TV/Radio, BBC Podcast
+and ITVplayer TV programmes
 
 Note: This is the version from:
   http://www.infradead.org/get_iplayer/html/get_iplayer.html
 which is a fork/continuation of the original from:
   http://linuxcentre.net/getiplayer
 which was discontinued as outlined here:
-  http://linuxcentre.net/get_iplayer-dropped-in-response-to-bbcs-lack-of-support-for-open-source
+  http://linuxcentre.net/get_iplayer-dropped-in-response-to-bbcs
+-lack-of-support-for-open-source
 
 
 %prep
@@ -47,4 +47,4 @@ rm -fr %{buildroot}
 %dir %{_datadir}/%{name}
 %dir %{_datadir}/%{name}/plugins
 %{_datadir}/%{name}/plugins/*.plugin
-%doc README.txt
+%doc README.md
