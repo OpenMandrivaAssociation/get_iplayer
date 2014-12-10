@@ -1,4 +1,5 @@
 %define debug_package %{nil}
+%define __noautoreq 'perl\\(Programme|perl\\(Streamer'
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
