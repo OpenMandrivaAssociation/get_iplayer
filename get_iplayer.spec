@@ -4,13 +4,13 @@
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
 Version:	2.90
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/File transfer
 Url:		http://www.infradead.org/get_iplayer/html/get_iplayer.html
 Source:		ftp://ftp.infradead.org/pub/get_iplayer/get_iplayer-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-root
-Suggests:	flvstreamer
+Suggests:	rtmpdump
 
 %description
 Lists, searches and records BBC iPlayer TV/Radio, BBC Podcast
