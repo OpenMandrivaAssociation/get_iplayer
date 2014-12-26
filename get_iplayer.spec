@@ -3,8 +3,8 @@
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
-Version:	2.90
-Release:	2
+Version:	2.91
+Release:	1
 License:	GPL
 Group:		Networking/File transfer
 Url:		http://www.infradead.org/get_iplayer/html/get_iplayer.html
