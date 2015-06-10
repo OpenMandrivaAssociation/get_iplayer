@@ -1,5 +1,6 @@
 removed_sources:
   get_iplayer-2.90.tar.gz: 59b9330886fa8352b84e05214933439ac917228e
   get_iplayer-2.91.tar.gz: ac1756c3a9a0b857caffab3977fbcc3312c839dd
-sources:
   get_iplayer-2.92.tar.gz: 683b89912a0f31e6508a9761f27354089524b1ba
+sources:
+  get_iplayer-2.94.tar.gz: 1082ffb213bf16bfdaa95731f48272b2a7adc4fd
