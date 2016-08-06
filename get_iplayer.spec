@@ -3,13 +3,14 @@
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
-Version:	2.94
-Release:	2
+Version:	2.95
+Release:	1
 License:	GPL
 Group:		Networking/File transfer
 Url:		http://www.infradead.org/get_iplayer/html/get_iplayer.html
 Source:		ftp://ftp.infradead.org/pub/get_iplayer/get_iplayer-%{version}.tar.gz
-BuildRoot:	%{_tmppath}/%{name}-root
+BuildRequires:	xz
+Requires:	perl-XML-LibXML
 Suggests:	rtmpdump
 
 %description
@@ -31,21 +32,17 @@ which was discontinued as outlined here:
 %build
 
 %install
-rm -fr %{buildroot}
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mkdir -p %{buildroot}%{_datadir}/%{name}/plugins
 
 install -m 755 get_iplayer %{buildroot}%{_bindir}
-install -m 644 plugins/*.plugin %{buildroot}%{_datadir}/%{name}/plugins/
-
+install -m 644 get_iplayer.1  %{buildroot}/%{_mandir}/man1
+xz  %{buildroot}/%{_mandir}/man1/*
 %clean
 rm -fr %{buildroot}
 
 %files
 %defattr(-,root,root)
 %{_bindir}/get_iplayer
-%dir %{_datadir}/%{name}
-%dir %{_datadir}/%{name}/plugins
-%{_datadir}/%{name}/plugins/*.plugin
+%{_mandir}/man1/get_iplayer.1*
 %doc README.md
