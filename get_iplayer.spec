@@ -3,12 +3,12 @@
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
-Version:	2.96
+Version:	3.12
 Release:	1
 License:	GPL
 Group:		Networking/File transfer
 Url:		http://www.infradead.org/get_iplayer/html/get_iplayer.html
-Source:		ftp://ftp.infradead.org/pub/get_iplayer/get_iplayer-%{version}.tar.gz
+Source:		https://github.com/get-iplayer/get_iplayer/archive/v%{version}.tar.gz
 BuildRequires:	xz
 Requires:	perl-XML-LibXML
 Suggests:	rtmpdump
