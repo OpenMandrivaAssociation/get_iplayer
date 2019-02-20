@@ -1,5 +1,5 @@
 %define debug_package %{nil}
-%define __requires_exclude 'perl\\(Programme|perl\\(Streamer'
+%define __requires_exclude perl\\(Programme|Streamer
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
