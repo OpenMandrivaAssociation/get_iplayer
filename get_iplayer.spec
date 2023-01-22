@@ -3,7 +3,7 @@
 
 Summary:	iPlayer TV, Radio, Podcase, Programmes stream tool
 Name:		get_iplayer
-Version:	3.30
+Version:	3.31
 Release:	1
 License:	GPL
 Group:		Networking/File transfer
