@@ -7,7 +7,7 @@ Version:	3.35
 Release:	1
 License:	GPL
 Group:		Networking/File transfer
-Url:		http://www.infradead.org/get_iplayer/html/get_iplayer.html
+Url:		https://www.infradead.org/get_iplayer/html/get_iplayer.html
 Source:		https://github.com/get-iplayer/get_iplayer/archive/v%{version}.tar.gz
 BuildRequires:	xz
 Requires:	perl-XML-LibXML
